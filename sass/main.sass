@@ -1,0 +1,291 @@
+$blue-color: #039fff
+
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    background-color: #333
+.navbar-brand
+    margin-right: 0
+.blue-text
+    color: $blue-color
+
+.wrapper
+    max-width: 2560px
+    width: 95%
+    margin: 0 auto
+    h2
+        text-transform: uppercase
+        text-align: center
+
+.underline
+
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $blue-color
+
+.scroll-fix::before
+    display: block
+    margin-top: -66px
+    height: 66px
+    content: ''
+
+.jumbotron
+    margin: 0
+
+h2
+    text-align: center
+
+// NAWIGACJA
+nav
+    text-transform: uppercase
+    transition: background-color .6s
+
+    a, i
+        color: #fff
+        transition: color .3s
+    span
+        font-size: 18px
+
+    a:hover
+        color: $blue-color
+
+    i
+        padding: 10px
+
+    .navbar-brand
+        font-weight: bold
+
+    .active
+        color: $blue-color
+
+.shadow-bg
+    background-color: rgba(0, 0, 0, .8)
+
+// HEADER
+header
+    color: #fff
+    overflow: hidden
+
+    h1
+        padding: 10px
+        text-transform: uppercase
+        font-size: 30px
+
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/hero-img.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+    .hero-shadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+        z-index: -10
+
+    .hero-text
+
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        text-align: center
+
+        p
+            padding: 10px
+            font-size: 14px
+
+    .btn-outline-light
+        text-transform: uppercase
+
+    .fa-chevron-down
+        display: none
+
+//MAIN
+
+#technologies
+    i
+        margin-top: 20px
+        font-size: 30px
+
+    h3
+        font-size: 18px
+        text-transform: uppercase
+    p
+        font-size: 14px
+
+    .aboutus-hover
+        transition: color .3s
+        // visibility: hidden
+
+    .aboutus-hover:hover
+        color: $blue-color
+
+    .ico
+        height: 30px
+        margin: 20px 0
+
+#reactProjects
+
+    // cursor: pointer
+    background-color: #fff
+    .jumbotron
+        position: relative
+        background-color: #fff
+
+    a
+        text-decoration: none
+        color: black
+        transition: color .3s
+
+    a:hover
+        color: $blue-color
+
+    .link
+        font-size: 12px
+        color: blue
+
+//web
+#web
+
+    .jumbotron
+        position: relative
+        background-image: url('../img/room-hero.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        z-index: 0
+
+        h2
+            color: #ddd
+            text-transform: uppercase
+
+    .web-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.6)
+        z-index: -1
+
+    .card
+        // min-width: 200px;
+        transition: transform .3s
+        img
+            height: 300px
+            object-fit: cover
+        i
+            padding: 10px 20px
+            font-size: 26px
+        .row
+            margin-left: 0
+            margin-right: 0
+
+    .card:hover
+        transform: scale(.96)
+
+    .card-body
+        min-height: 150px
+        // height: 150px
+    .card-title
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+    .card-text
+        font-size: 14px
+
+//desktop
+#desktop
+    h2
+        text-align: center
+        text-transform: uppercase
+    .carousel-item
+        position: relative
+        height: 600px
+
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+    .carousel-caption
+        position: absolute
+        left: 0
+        right: 0
+        padding: 40px 0
+        background-color: rgba(0, 0, 0, .8)
+
+    .carousel-indicators
+        padding-bottom: 20px
+
+//CONTACT
+#contact
+    .jumbotron
+        position: relative
+        background-image: url(../img/america.jpg)
+        background-position: bottom
+        background-attachment: fixed
+        background-size: cover
+        z-index: 0
+
+        h2
+            color: #fff
+            font-weight: bold
+
+        .underline
+            background-color: #ccc
+
+    .contact-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 9, 27, .85)
+        z-index: -10
+
+    .contact-us
+        display: flex
+        align-items: center
+        color: #fff
+
+    .contact-item
+        margin: 30px 0
+
+        h3
+            margin-bottom: 15px
+            text-transform: uppercase
+            letter-spacing: 2px
+
+        .social-media
+            font-size: 26px
+            a
+                padding: 10px
+                color: #fff
+                text-shadow: 0 0 5px black
+
+            a:hover
+                color: #ccc
+
+//FOOTER
+footer
+    color: #fff
+
+    p
+        padding: 20px
+        margin-bottom: 0
+        text-align: center
